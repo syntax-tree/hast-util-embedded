@@ -41,10 +41,6 @@ result = embedded({
 
 Check if the given value is an [**embedded**][spec] [element][].
 
-**Parameters**: `node` (`*`) — Value to check.
-
-**Returns**: `boolean`, whether `node` passes the test.
-
 ## License
 
 [MIT][license] © [Titus Wormer][author]

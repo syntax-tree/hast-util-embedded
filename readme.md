@@ -15,52 +15,24 @@ globals module, [uncompressed and compressed][releases].
 
 ## Usage
 
-Dependencies:
-
 ```javascript
-var embedded = require('hast-util-embedded');
-```
+var embedded = require('./index.js');
 
-Given a non-embedded value:
-
-```javascript
+// Given a non-embedded value:
 var result = embedded({
-    'type': 'element',
-    'tagName': 'a',
-    'properties': {
-        'href': '#alpha',
-        'title': 'Bravo'
-    },
-    'children': [{
-        'type': 'text',
-        'value': 'Charlie'
-    }]
-});
-```
+  type: 'element',
+  tagName: 'a',
+  properties: {href: '#alpha', title: 'Bravo'},
+  children: [{type: 'text', value: 'Charlie'}]
+}); //=> false
 
-Yields:
-
-```js
-false
-```
-
-Given a embedded element:
-
-```javascript
+// Given a embedded element:
 result = embedded({
-    'type': 'element',
-    'tagName': 'audio',
-    'properties': {
-        'src': 'delta.ogg'
-    },
-    'children': []
-});
-```
-
-Yields:
-
-```js
-true
+  type: 'element',
+  tagName: 'audio',
+  properties: {src: 'delta.ogg'},
+  children: []
+}); //=> true
 ```
 
 ## API

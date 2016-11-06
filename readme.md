@@ -1,6 +1,6 @@
 # hast-util-embedded [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
 
-Check if a [node][] is a [**embedded**][spec] [element][].
+Check if a [node][] is an [**embedded**][spec] [element][].
 
 ## Installation
 

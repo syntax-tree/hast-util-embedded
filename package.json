@@ -19,9 +19,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wooorm/hast-util-embedded.git"
+    "url": "https://github.com/syntax-tree/hast-util-embedded.git"
   },
-  "bugs": "https://github.com/wooorm/hast-util-embedded/issues",
+  "bugs": "https://github.com/syntax-tree/hast-util-embedded/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"

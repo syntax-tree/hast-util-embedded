@@ -10,9 +10,6 @@ Check if a [node][] is an [**embedded**][spec] [element][].
 npm install hast-util-embedded
 ```
 
-**hast-util-embedded** is also available as an AMD, CommonJS, and
-globals module, [uncompressed and compressed][releases].
-
 ## Usage
 
 ```javascript
@@ -47,24 +44,22 @@ Check if the given value is an [**embedded**][spec] [element][].
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/hast-util-embedded.svg
+[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-embedded.svg
 
-[build-page]: https://travis-ci.org/wooorm/hast-util-embedded
+[build-page]: https://travis-ci.org/syntax-tree/hast-util-embedded
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/hast-util-embedded.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-embedded.svg
 
-[coverage-page]: https://codecov.io/github/wooorm/hast-util-embedded?branch=master
+[coverage-page]: https://codecov.io/github/syntax-tree/hast-util-embedded?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/hast-util-embedded/releases
 
 [license]: LICENSE
 
 [author]: http://wooorm.com
 
-[node]: https://github.com/wooorm/hast#node
+[node]: https://github.com/syntax-tree/unist#node
 
-[element]: https://github.com/wooorm/hast#element
+[element]: https://github.com/syntax-tree/hast#element
 
 [spec]: https://html.spec.whatwg.org/#embedded-content-2

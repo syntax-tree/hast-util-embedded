@@ -11,21 +11,18 @@
     "util",
     "utility"
   ],
-  "dependencies": {
-    "hast-util-is-element": "^1.0.0"
-  },
-  "files": [
-    "index.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/syntax-tree/hast-util-embedded.git"
-  },
+  "repository": "syntax-tree/hast-util-embedded",
   "bugs": "https://github.com/syntax-tree/hast-util-embedded/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "hast-util-is-element": "^1.0.0"
+  },
   "devDependencies": {
     "browserify": "^14.0.0",
     "esmangle": "^1.0.1",

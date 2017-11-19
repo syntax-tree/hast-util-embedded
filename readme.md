@@ -38,6 +38,14 @@ result = embedded({
 
 Check if the given value is an [**embedded**][spec] [element][].
 
+## Contribute
+
+See [`contribute.md` in `syntax-tree/hast`][contribute] for ways to get
+started.
+
+This organisation has a [Code of Conduct][coc].  By interacting with this
+repository, organisation, or community you agree to abide by its terms.
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
@@ -63,3 +71,7 @@ Check if the given value is an [**embedded**][spec] [element][].
 [element]: https://github.com/syntax-tree/hast#element
 
 [spec]: https://html.spec.whatwg.org/#embedded-content-2
+
+[contribute]: https://github.com/syntax-tree/hast/blob/master/contributing.md
+
+[coc]: https://github.com/syntax-tree/hast/blob/master/code-of-conduct.md

@@ -5,3 +5,4 @@ coverage/
 node_modules/
 hast-util-embedded.js
 hast-util-embedded.min.js
+yarn.lock

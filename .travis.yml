@@ -4,21 +4,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    skip_cleanup: true
-    email: tituswormer@gmail.com
-    api_key:
-      secure: AoLYsh2p2yxV0RKOPyqO7j/Zan53n5msO6rQWG+awi8ZEjW0PsHySTF69KkwnNEXWsFpyUY4C++FgyXNfqGLLHV7ut9TK8SqMhs9Az3JdTO9KYU3T9CG/XbuF6GTdv8Nqja1dWfhG5nDNpjK7pcuZKF+q8LddVnfkGX/BmiSJaElyQNXG+WQCjTPoUMzHwNju0Pk8RUcdJNvvVfj+F27OGhCNhfZohgqAbq7dDyst9yI24+y1W3mnnhPOujSx6NlC8mfrteiK1zMnod93i+t2U1xpT3BPglRvXKG2FoLLI35d3VByBk8esUodFYR/BPtS64k/nnL7UtQJDtPKPl+ErdzLh1v1/KkBkGKSNbRziwbc2hUmwihh3cySISL/DMcSm1ehPlezc0N8le9SzCMaJNjeVhKuxU+HdHo05pSseEvYB0JTbxCnYi/xqODwvEqbRyIozhQijXgeoKxpRGdX27t4MU4qg6Z3Qi56ldwLFH3fmTtZkeljP7KEcu9QoSMzzPOXNYb142Zx4whM8vH7uDXvfQZ1drMFlShWA85X+bZqCLDV6pozGssmrgrsXYQQDS5kFLT1FFAeAetY/RVAdVnqytRhd7MzFV9/tEHgN/3lya/7UMsNUASXhs4Zjj5a1In0Rl+hSNuFmkjIMNJDDya+6ilVNEdBpLtFbXVJQU=
-    on:
-      tags: true
-      node: '9.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: oMHI2yYeVS1263URexHk2jhwY7oPaYt7IBDc7hhgb/83TBgDWasUV4MUNsMQxriCkk3dawx0We91Rksq7QkC2V5VLC2Ki17h+WoC6HkmTVPQ5dYaAM7BG3Lc0UYDKCP+ZahGOKJIf1gxYczigeD/dX0ZeJXGdODb3JOS31BZ+pxEC0SbTxEgpL7OPOIdWfou3jnrFRWTt4N5FOfSiJAuO2oZ3ZkkjfWF3+bijiL8V6xDAoP14QFtsG7tLmMY/1TasZ2bcMb8AgSWOY4pEWThNurndn+c33VzyinvvSsRFMYLpT3vpFKCxTSudsxBg5Gyl0iNWBodBvqFhiiN1SdGv7SZ3TQgly7DJDL5QMNmIcna7ItUkrNXilHhfsKyoYNEXEz9ir0H7dZPIDCF7ULQZE58r8bSdi9PP3P5aKjyKO5Mx9Ap4jNupyCVCt6p4PTua9pLo/slV86TsLZIYIHUrkFclK2krHJG2nwsdvgLS8h0+dfdp5lP1gXIvm9l5GYVPkbMHcKuPhmkpr8D5csYnIJrLhm8XUaRakacE/4gY4ovDf0r3K486+sPK5+1uE5Gvlgnu4O4OAEjeIG52XvccKd2MmnKNef5k3WX3d4KnpxyRQ3mJ5FnnJ7VpqnxR9matrvf9BFQ3p1o5rfwrSKSvUB4kopSSeSkZ1+WAcwkQcU=
-    file:
-      - "hast-util-embedded.js"
-      - "hast-util-embedded.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: oMHI2yYeVS1263URexHk2jhwY7oPaYt7IBDc7hhgb/83TBgDWasUV4MUNsMQxriCkk3dawx0We91Rksq7QkC2V5VLC2Ki17h+WoC6HkmTVPQ5dYaAM7BG3Lc0UYDKCP+ZahGOKJIf1gxYczigeD/dX0ZeJXGdODb3JOS31BZ+pxEC0SbTxEgpL7OPOIdWfou3jnrFRWTt4N5FOfSiJAuO2oZ3ZkkjfWF3+bijiL8V6xDAoP14QFtsG7tLmMY/1TasZ2bcMb8AgSWOY4pEWThNurndn+c33VzyinvvSsRFMYLpT3vpFKCxTSudsxBg5Gyl0iNWBodBvqFhiiN1SdGv7SZ3TQgly7DJDL5QMNmIcna7ItUkrNXilHhfsKyoYNEXEz9ir0H7dZPIDCF7ULQZE58r8bSdi9PP3P5aKjyKO5Mx9Ap4jNupyCVCt6p4PTua9pLo/slV86TsLZIYIHUrkFclK2krHJG2nwsdvgLS8h0+dfdp5lP1gXIvm9l5GYVPkbMHcKuPhmkpr8D5csYnIJrLhm8XUaRakacE/4gY4ovDf0r3K486+sPK5+1uE5Gvlgnu4O4OAEjeIG52XvccKd2MmnKNef5k3WX3d4KnpxyRQ3mJ5FnnJ7VpqnxR9matrvf9BFQ3p1o5rfwrSKSvUB4kopSSeSkZ1+WAcwkQcU=
+  file:
+    - "hast-util-embedded.js"
+    - "hast-util-embedded.min.js"
+  on:
+    tags: true
+    node: '9.0'

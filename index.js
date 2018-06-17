@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 
 /* Dependencies. */
-var is = require('hast-util-is-element');
+var is = require('hast-util-is-element')
 
 /* Expose. */
-module.exports = embedded;
+module.exports = embedded
 
 /* Tag-names. */
 var names = [
@@ -18,9 +18,9 @@ var names = [
   'picture',
   'svg',
   'video'
-];
+]
 
 /* Check if a node is a embedded element. */
 function embedded(node) {
-  return is(node, names);
+  return is(node, names)
 }

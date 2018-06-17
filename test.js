@@ -1,34 +1,26 @@
-'use strict';
+'use strict'
 
 /* Dependencies. */
-var test = require('tape');
-var embedded = require('./index.js');
+var test = require('tape')
+var embedded = require('.')
 
 /* Tests. */
-test('embedded', function (t) {
-  t.equal(
-    embedded(),
-    false,
-    'should return `false` without node'
-  );
+test('embedded', function(t) {
+  t.equal(embedded(), false, 'should return `false` without node')
 
-  t.equal(
-    embedded(null),
-    false,
-    'should return `false` with `null`'
-  );
+  t.equal(embedded(null), false, 'should return `false` with `null`')
 
   t.equal(
     embedded({type: 'text'}),
     false,
     'should return `false` when without `element`'
-  );
+  )
 
   t.equal(
     embedded({type: 'element'}),
     false,
     'should return `false` when with invalid `element`'
-  );
+  )
 
   t.equal(
     embedded({
@@ -39,7 +31,7 @@ test('embedded', function (t) {
     }),
     false,
     'should return `false` when without not embedded'
-  );
+  )
 
   t.equal(
     embedded({
@@ -50,7 +42,7 @@ test('embedded', function (t) {
     }),
     true,
     'should return `true` when with embedded'
-  );
+  )
 
-  t.end();
-});
+  t.end()
+})

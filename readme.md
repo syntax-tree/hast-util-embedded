@@ -13,23 +13,23 @@ npm install hast-util-embedded
 ## Usage
 
 ```javascript
-var embedded = require('./index.js');
+var embedded = require('hast-util-embedded')
 
 // Given a non-embedded value:
-var result = embedded({
+embedded({
   type: 'element',
   tagName: 'a',
   properties: {href: '#alpha', title: 'Bravo'},
   children: [{type: 'text', value: 'Charlie'}]
-}); //=> false
+}) // => false
 
 // Given a embedded element:
-result = embedded({
+embedded({
   type: 'element',
   tagName: 'audio',
   properties: {src: 'delta.ogg'},
   children: []
-}); //=> true
+}) // => true
 ```
 
 ## API

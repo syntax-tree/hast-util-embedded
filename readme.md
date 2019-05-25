@@ -63,21 +63,21 @@ abide by its terms.
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/syntax-tree/unist-util-assert.svg
+[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-embedded.svg
 
-[build]: https://travis-ci.org/syntax-tree/unist-util-assert
+[build]: https://travis-ci.org/syntax-tree/hast-util-embedded
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/unist-util-assert.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-embedded.svg
 
-[coverage]: https://codecov.io/github/syntax-tree/unist-util-assert
+[coverage]: https://codecov.io/github/syntax-tree/hast-util-embedded
 
-[downloads-badge]: https://img.shields.io/npm/dm/unist-util-assert.svg
+[downloads-badge]: https://img.shields.io/npm/dm/hast-util-embedded.svg
 
-[downloads]: https://www.npmjs.com/package/unist-util-assert
+[downloads]: https://www.npmjs.com/package/hast-util-embedded
 
-[size-badge]: https://img.shields.io/bundlephobia/minzip/unist-util-assert.svg
+[size-badge]: https://img.shields.io/bundlephobia/minzip/hast-util-embedded.svg
 
-[size]: https://bundlephobia.com/result?p=unist-util-assert
+[size]: https://bundlephobia.com/result?p=hast-util-embedded
 
 [sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
 

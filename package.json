@@ -1,15 +1,17 @@
 {
   "name": "hast-util-embedded",
   "version": "1.0.4",
-  "description": "Check if a node is a embedded element",
+  "description": "hast utility to check if a node is an embedded element",
   "license": "MIT",
   "keywords": [
+    "unist",
     "hast",
+    "hast-util",
+    "util",
+    "utility",
     "html",
     "category",
-    "embedded",
-    "util",
-    "utility"
+    "embedded"
   ],
   "repository": "syntax-tree/hast-util-embedded",
   "bugs": "https://github.com/syntax-tree/hast-util-embedded/issues",

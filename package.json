@@ -1,6 +1,6 @@
 {
   "name": "hast-util-embedded",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "hast utility to check if a node is an embedded element",
   "license": "MIT",
   "keywords": [

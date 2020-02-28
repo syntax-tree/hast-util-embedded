@@ -1,10 +1,8 @@
 'use strict'
 
-/* Dependencies. */
 var test = require('tape')
 var embedded = require('.')
 
-/* Tests. */
 test('embedded', function(t) {
   t.equal(embedded(), false, 'should return `false` without node')
 

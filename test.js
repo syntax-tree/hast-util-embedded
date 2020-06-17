@@ -3,7 +3,7 @@
 var test = require('tape')
 var embedded = require('.')
 
-test('embedded', function(t) {
+test('embedded', function (t) {
   t.equal(embedded(), false, 'should return `false` without node')
 
   t.equal(embedded(null), false, 'should return `false` with `null`')

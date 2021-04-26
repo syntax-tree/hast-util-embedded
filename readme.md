@@ -13,6 +13,9 @@
 
 ## Install
 
+This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
+Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -22,7 +25,7 @@ npm install hast-util-embedded
 ## Use
 
 ```js
-var embedded = require('hast-util-embedded')
+import {embedded} from 'hast-util-embedded'
 
 // Given a non-embedded value:
 embedded({
@@ -42,6 +45,9 @@ embedded({
 ```
 
 ## API
+
+This package exports the following identifiers: `embedded`.
+There is no default export.
 
 ### `embedded(node)`
 

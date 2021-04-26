@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var embedded = require('.')
+import test from 'tape'
+import {embedded} from './index.js'
 
 test('embedded', function (t) {
   t.equal(embedded(), false, 'should return `false` without node')

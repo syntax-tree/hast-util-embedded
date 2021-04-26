@@ -1,5 +1,2 @@
 coverage/
-hast-util-embedded.js
-hast-util-embedded.min.js
-*.json
 *.md

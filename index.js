@@ -9,7 +9,7 @@ import {convertElement} from 'hast-util-is-element'
  * Check if a node is an embedded element.
  * @type {AssertEmbedded}
  */
-// @ts-ignore Sure, the assertion matches.
+// @ts-expect-error Sure, the assertion matches.
 export const embedded = convertElement([
   'audio',
   'canvas',

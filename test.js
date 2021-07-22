@@ -1,7 +1,7 @@
 import test from 'tape'
 import {embedded} from './index.js'
 
-test('embedded', function (t) {
+test('embedded', (t) => {
   t.equal(embedded(), false, 'should return `false` without node')
 
   t.equal(embedded(null), false, 'should return `false` with `null`')

@@ -209,7 +209,7 @@ abide by its terms.
 
 [coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
 
-[spec]: https://html.spec.whatwg.org/#embedded-content-2
+[spec]: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-2
 
 [hast]: https://github.com/syntax-tree/hast
 

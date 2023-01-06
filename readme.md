@@ -8,7 +8,7 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-[hast][] utility to check if a node is [*embedded*][spec].
+[hast][] utility to check if a node is [*embedded content*][spec].
 
 ## Contents
 
@@ -17,7 +17,7 @@
 *   [Install](#install)
 *   [Use](#use)
 *   [API](#api)
-    *   [`embedded(node)`](#embeddednode)
+    *   [`embedded(value)`](#embeddedvalue)
 *   [Types](#types)
 *   [Compatibility](#compatibility)
 *   [Security](#security)
@@ -38,7 +38,7 @@ looking for!
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, 16.0+, or 18.0+), install with [npm][]:
+In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
 npm install hast-util-embedded
@@ -82,20 +82,24 @@ embedded({
 
 ## API
 
-This package exports the following identifiers: `embedded`.
+This package exports the identifier [`embedded`][embedded].
 There is no default export.
 
-### `embedded(node)`
+### `embedded(value)`
 
-Check if `node` is an [*embedded*][spec] [*element*][element].
+Check if `node` is an [*embedded content*][spec].
 
 ###### Parameters
 
-*   `node` ([`Node`][node]) — node to check
+*   `value` (`unknown`)
+    — thing to check (typically [`Node`][node])
 
 ###### Returns
 
-Whether `node` is embedded content (`boolean`).
+Whether `value` is an element considered embedded content (`boolean`).
+
+The elements `audio`, `canvas`, `embed`, `iframe`, `img`, `math`,
+`object`, `picture`, `svg`, and `video` are embedded content.
 
 ## Types
 
@@ -106,7 +110,7 @@ It exports no additional types.
 
 Projects maintained by the unified collective are compatible with all maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Security
@@ -215,6 +219,6 @@ abide by its terms.
 
 [node]: https://github.com/syntax-tree/hast#nodes
 
-[element]: https://github.com/syntax-tree/hast#element
-
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
+
+[embedded]: #embeddedvalue

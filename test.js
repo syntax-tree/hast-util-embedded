@@ -1,8 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {embedded} from './index.js'
+import * as mod from './index.js'
 
 test('embedded', () => {
+  assert.deepEqual(
+    Object.keys(mod).sort(),
+    ['embedded'],
+    'should expose the public api'
+  )
+
   assert.equal(embedded(), false, 'should return `false` without node')
 
   assert.equal(embedded(null), false, 'should return `false` with `null`')

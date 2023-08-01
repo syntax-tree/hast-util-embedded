@@ -3,49 +3,58 @@ import test from 'node:test'
 import {embedded} from './index.js'
 import * as mod from './index.js'
 
-test('embedded', () => {
-  assert.deepEqual(
-    Object.keys(mod).sort(),
-    ['embedded'],
-    'should expose the public api'
+test('embedded', async function (t) {
+  await t.test('should expose the public api', async function () {
+    assert.deepEqual(Object.keys(mod).sort(), ['embedded'])
+  })
+
+  await t.test('should return `false` without node', async function () {
+    // @ts-expect-error: check how a missing node is handled.
+    assert.equal(embedded(), false)
+  })
+
+  await t.test('should return `false` with `null`', async function () {
+    assert.equal(embedded(null), false)
+  })
+
+  await t.test(
+    'should return `false` when without `element`',
+    async function () {
+      assert.equal(embedded({type: 'text'}), false)
+    }
   )
 
-  // @ts-expect-error: check how a missing node is handled.
-  assert.equal(embedded(), false, 'should return `false` without node')
-
-  assert.equal(embedded(null), false, 'should return `false` with `null`')
-
-  assert.equal(
-    embedded({type: 'text'}),
-    false,
-    'should return `false` when without `element`'
+  await t.test(
+    'should return `false` when with invalid `element`',
+    async function () {
+      assert.equal(embedded({type: 'element'}), false)
+    }
   )
 
-  assert.equal(
-    embedded({type: 'element'}),
-    false,
-    'should return `false` when with invalid `element`'
+  await t.test(
+    'should return `false` when without not embedded',
+    async function () {
+      assert.equal(
+        embedded({
+          type: 'element',
+          tagName: 'a',
+          properties: {href: '#alpha', title: 'Bravo'},
+          children: [{type: 'text', value: 'Charlie'}]
+        }),
+        false
+      )
+    }
   )
 
-  assert.equal(
-    embedded({
-      type: 'element',
-      tagName: 'a',
-      properties: {href: '#alpha', title: 'Bravo'},
-      children: [{type: 'text', value: 'Charlie'}]
-    }),
-    false,
-    'should return `false` when without not embedded'
-  )
-
-  assert.equal(
-    embedded({
-      type: 'element',
-      tagName: 'audio',
-      properties: {src: 'delta.ogg'},
-      children: []
-    }),
-    true,
-    'should return `true` when with embedded'
-  )
+  await t.test('should return `true` when with embedded', async function () {
+    assert.equal(
+      embedded({
+        type: 'element',
+        tagName: 'audio',
+        properties: {src: 'delta.ogg'},
+        children: []
+      }),
+      true
+    )
+  })
 })

@@ -47,14 +47,14 @@ npm install hast-util-embedded
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {embedded} from 'https://esm.sh/hast-util-embedded@2'
+import {embedded} from 'https://esm.sh/hast-util-embedded@3'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {embedded} from 'https://esm.sh/hast-util-embedded@2?bundle'
+  import {embedded} from 'https://esm.sh/hast-util-embedded@3?bundle'
 </script>
 ```
 

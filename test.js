@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import {embedded} from './index.js'
-import * as mod from './index.js'
+import {embedded} from 'hast-util-embedded'
 
 test('embedded', async function (t) {
   await t.test('should expose the public api', async function () {
-    assert.deepEqual(Object.keys(mod).sort(), ['embedded'])
+    assert.deepEqual(Object.keys(await import('hast-util-embedded')).sort(), [
+      'embedded'
+    ])
   })
 
   await t.test('should return `false` without node', async function () {
